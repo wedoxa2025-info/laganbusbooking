@@ -11,9 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
     
-    <!-- REMOVE the Tailwind CDN script and config (lines 20-100) -->
-    <!-- The styles below should be moved to src/index.css, but keep them for now -->
-    
     <!-- Link to your CSS file -->
     <link rel="stylesheet" href="./src/index.css">
     
@@ -32,7 +29,7 @@
   </head>
   <body class="bg-silver-50 dark:bg-slate-950 text-slate-900 dark:text-white antialiased transition-colors duration-300 selection:bg-primary/30 selection:text-primary-dark">
     <div id="root"></div>
-    <!-- IMPORTANT: Change this to point to the BUILT JavaScript file -->
-    <script type="module" src="./dist/assets/index.js"></script>
+    <!-- FIXED: Point to your source file, let Vite handle the build -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
